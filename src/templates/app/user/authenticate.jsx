@@ -35,7 +35,7 @@ const Authenticate = () => (
             <h1 className='gr-padding-10'>{it.L('Your account has been verified successfully')}</h1>
         </div>
 
-        <div id='idv-container' className='idv-main-container'>
+        <div id='idv-container' className='idv-main-container'>            
             <div id='idv_country_selector' className='idv-container country-selector invisible'>
                 <h1 className='idv-container__header'>{it.L('Verify your identity')}</h1>
                 <p>{it.L('In which country was your document issued?')}</p>
@@ -46,6 +46,11 @@ const Authenticate = () => (
                     text_className='margin-top-40'
                     text={it.L('Next')}
                 />
+            </div>
+
+            <div id='duplicate_idv_container' className='container invisible'>
+                <p id='duplicate_idv_text' className='notice-msg center-text' />
+                <button id='duplicate_idv_button' className='button container'>{it.L('Try Again')}</button>
             </div>
 
             <div id='idv_document_submit' className='idv-container invisible'>
